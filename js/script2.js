@@ -45,5 +45,73 @@ Buon lavoro e buon divertimento! :slightly_smiling_face:
 
 
 
+const emaiList = ['cirronegiorgio@gmail.com', 'francescocirrone@gmail.com', 'marcocirrone@gamil.com', 'stefanocirrone@gmail.com'];
 
 
+
+const userInput = document.getElementById('mail');
+
+console.log(userInput);
+
+
+const button = document.getElementById('button');
+
+//creazione evento 
+
+//template literal 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+button.addEventListener('click', function () {
+    const confirMail = document.getElementById('mail').value;
+    //prendiamo input dalla mail e lo mettiamo in variabile 
+    /*
+    const confirMail = document.getElementById('mail').value;
+    let result = '';
+    for (let i = 0; i < emaiList.length; i++) {
+
+        if (emaiList[i] === confirMail) {
+
+            result = `la mail va bene`;
+            break;
+
+        } else {
+
+            result = `la mail non va bene`;
+        }
+
+        console.log(result);
+
+
+    }
+
+
+
+
+});*/
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // creo una variabile qual ora trovassi o meno l'email e gli do preimpostato un valore falso
+    emailFound = false;
+
+    // creo un ciclo che mi controlli in automatico le email
+    for (let i = 0; i < emaiList.length; i++) {
+        if (emaiList[i] === confirMail) {
+            emailFound = true;
+            break;
+        }
+    }
+
+    // se è presente nell array stampo che è stata approvata altrimenti...
+    if (emailFound) {
+        console.log('email approvata');
+    } else {
+        console.log('email non valida');
+    }
+})
+
+
+/*
+
+se metto result fuori ci avrei potuto operare 
+
+ */
