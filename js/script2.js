@@ -28,3 +28,22 @@ Buon lavoro e buon divertimento! :slightly_smiling_face:
 
 
 //fase di preparazione 
+
+
+/*
+1- creazione form in cui inserire i dati in input; 
+
+2-creazione di una lista  di email ; 
+
+3- inserimento mail di prova ;
+
+4-controllo tramite ciclo for ;
+
+5-stampare esisto in pagina ; 
+
+*/
+
+
+
+
+
