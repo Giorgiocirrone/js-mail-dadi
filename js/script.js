@@ -30,35 +30,34 @@ Buon lavoro e buon divertimento! :slightly_smiling_face:
 
 //Fase di preparazione delle variabili 
 const maxNumber = 6
-const randomCPUNumber = Math.floor(Math.random() * maxNumber) + 1;
+const randomCPUNumber1 = Math.floor(Math.random() * maxNumber) + 1;
+const randomCPUNumber2 = Math.floor(Math.random() * maxNumber) + 1;
+
+
+
 
 /*validazione */
-console.log(randomCPUNumber);
-
-const userNumber = parseInt(prompt(`Scegli un nuemmro da 1 a ${maxNumber}`));
+console.log(randomCPUNumber1, randomCPUNumber2);
 
 
+if (randomCPUNumber1 === randomCPUNumber2) {
 
+    console.log('i numeri sono uguali non ha vinto nessuno ');
 
-if (userNumber > 6) {
-
-    window.alert('hai sbagliato sei uscito fuori dal range di valori');
 }
 
 
-if (userNumber === randomCPUNumber) {
 
-    console.log('Nessuno dei due ha vinto');
-}
+if (randomCPUNumber1 > randomCPUNumber2) {
 
-
-if (userNumber > randomCPUNumber) {
-
-    console.log(`Hai vinto!`);
+    console.log(`${randomCPUNumber1} è il più grande`);
 } else {
+    console.log(`${randomCPUNumber2} è il più grande`);
 
-    console.log(`Hai perso!`);
+
 }
+
+
 
 
 

@@ -51,6 +51,8 @@ const emaiList = ['cirronegiorgio@gmail.com', 'francescocirrone@gmail.com', 'mar
 
 const userInput = document.getElementById('mail');
 
+const risultatoFinale = document.getElementById('risultato-finale')
+
 console.log(userInput);
 
 
