@@ -33,29 +33,50 @@ const maxNumber = 6
 const randomCPUNumber1 = Math.floor(Math.random() * maxNumber) + 1;
 const randomCPUNumber2 = Math.floor(Math.random() * maxNumber) + 1;
 
+//mettere solo quello che interessa all'if 
 
+
+
+
+const dadi = document.getElementById('dadi');
 
 
 /*validazione */
 console.log(randomCPUNumber1, randomCPUNumber2);
 
 
+let massage = 'pareggio';
+
 if (randomCPUNumber1 === randomCPUNumber2) {
 
-    console.log('i numeri sono uguali non ha vinto nessuno ');
+    message = 'pareggio';
+
 
 }
 
 
 
 if (randomCPUNumber1 > randomCPUNumber2) {
-
-    console.log(`${randomCPUNumber1} è il più grande`);
+    message = 'ha vinto il giocatore 1'
 } else {
-    console.log(`${randomCPUNumber2} è il più grande`);
-
+    message = 'ha vinto il giocatore 2'
 
 }
+
+console.log(message);
+
+
+//voglio andare a stampare in pagina  bonus 
+
+
+//fase di output
+
+
+dadi.innerHTML = `${message}`;
+
+
+
+//errore io avevo fatto utente contro console 
 
 
 
