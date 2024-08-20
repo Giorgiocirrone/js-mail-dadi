@@ -111,9 +111,43 @@ button.addEventListener('click', function () {
     }
 })
 
-
+risultatoFinale.innerHTML = `${result}`
 /*
 
 se metto result fuori ci avrei potuto operare 
 
  */
+
+
+
+/*correzione marco ricorda di fare la scaletta quindi fase di raccolta dati validazione e prevent.default
+
+form.addeventListener(''submit',function(event){
+
+event.preventDefault (); 
+
+const email = emailField.value.trim();
+
+
+if (email.length === 0 ){
+
+
+return ; // ma questa sarebbe una  forzatura 
+
+
+if (!email) return ; questo è un tipo di controllo 
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+*/
